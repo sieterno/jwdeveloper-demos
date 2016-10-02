@@ -1,9 +1,9 @@
 var playerInstance = jwplayer("myElement");
 
-// In order for this demo to work, duration must be included for each playlist item.
-
 playerInstance.setup({
-    "playlist": "//content.jwplatform.com/feeds/DrqpQIzP.rss"
+    "playlist": "//content.jwplatform.com/feeds/UMxwRQMF.rss"
+	width: "100%",
+  height: "100%"
 });
 
 playerInstance.on('displayClick', function() {
@@ -11,7 +11,7 @@ playerInstance.on('displayClick', function() {
 });
     
 playerInstance.on('ready', function() {
-    var seconds = new Date().getMinutes()*60 + new Date().getSeconds();
+    var seconds = new Date().getMinutes()*350 + new Date().getSeconds();
     var playlist = playerInstance.getPlaylist();
     var offset = 0;
 
